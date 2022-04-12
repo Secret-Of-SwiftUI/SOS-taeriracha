@@ -10,7 +10,7 @@ import SwiftUI
 struct SectionHeader: View {
     var body: some View {
         HStack {
-            Text("New & Noteworthy").font(.headline)
+            Text("Section Header Name").font(.headline)
             Spacer()
             Button("See All"){}
             .font(.subheadline)
