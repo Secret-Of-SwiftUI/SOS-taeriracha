@@ -5,7 +5,6 @@ See the License.txt file for this sample’s licensing information.
  [] Source of truth 개념 : 한 곳에서만 값을 정의해야 한다?
  */
 
-import Foundation
 import SwiftUI
 
 struct Info {
