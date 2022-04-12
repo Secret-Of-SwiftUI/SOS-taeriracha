@@ -17,6 +17,9 @@
 		BD1B73E028056A0200DCF539 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73DF28056A0200DCF539 /* SearchView.swift */; };
 		BD1B73E528056FBD00DCF539 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73E428056FBD00DCF539 /* FeaturedItem.swift */; };
 		BD1B73E72805739B00DCF539 /* FeaturedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73E62805739B00DCF539 /* FeaturedRow.swift */; };
+		BD1B73E92805774000DCF539 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73E82805774000DCF539 /* SectionHeader.swift */; };
+		BD1B73EB2805781700DCF539 /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73EA2805781700DCF539 /* NewItem.swift */; };
+		BD1B73ED2805799900DCF539 /* NewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73EC2805799900DCF539 /* NewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		BD1B73DF28056A0200DCF539 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		BD1B73E428056FBD00DCF539 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		BD1B73E62805739B00DCF539 /* FeaturedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRow.swift; sourceTree = "<group>"; };
+		BD1B73E82805774000DCF539 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		BD1B73EA2805781700DCF539 /* NewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
+		BD1B73EC2805799900DCF539 /* NewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 			children = (
 				BD1B73E428056FBD00DCF539 /* FeaturedItem.swift */,
 				BD1B73E62805739B00DCF539 /* FeaturedRow.swift */,
+				BD1B73E82805774000DCF539 /* SectionHeader.swift */,
+				BD1B73EA2805781700DCF539 /* NewItem.swift */,
+				BD1B73EC2805799900DCF539 /* NewRow.swift */,
 			);
 			path = Row;
 			sourceTree = "<group>";
@@ -172,10 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD1B73DA280569C300DCF539 /* ListenNowView.swift in Sources */,
+				BD1B73EB2805781700DCF539 /* NewItem.swift in Sources */,
 				BD1B73D8280564DD00DCF539 /* BrowseView.swift in Sources */,
+				BD1B73ED2805799900DCF539 /* NewRow.swift in Sources */,
 				BD1B73C92805597F00DCF539 /* ContentView.swift in Sources */,
 				BD1B73E528056FBD00DCF539 /* FeaturedItem.swift in Sources */,
 				BD1B73E72805739B00DCF539 /* FeaturedRow.swift in Sources */,
+				BD1B73E92805774000DCF539 /* SectionHeader.swift in Sources */,
 				BD1B73DE280569FA00DCF539 /* LibraryView.swift in Sources */,
 				BD1B73E028056A0200DCF539 /* SearchView.swift in Sources */,
 				BD1B73C72805597F00DCF539 /* PodCastApp.swift in Sources */,
