@@ -15,6 +15,7 @@
 		BD1B73DA280569C300DCF539 /* ListenNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73D9280569C300DCF539 /* ListenNowView.swift */; };
 		BD1B73DE280569FA00DCF539 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73DD280569FA00DCF539 /* LibraryView.swift */; };
 		BD1B73E028056A0200DCF539 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73DF28056A0200DCF539 /* SearchView.swift */; };
+		BD1B73E528056FBD00DCF539 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73E428056FBD00DCF539 /* FeaturedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BD1B73D9280569C300DCF539 /* ListenNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenNowView.swift; sourceTree = "<group>"; };
 		BD1B73DD280569FA00DCF539 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		BD1B73DF28056A0200DCF539 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BD1B73E428056FBD00DCF539 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +81,21 @@
 		BD1B73D42805642E00DCF539 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BD1B73E128056F2C00DCF539 /* Row */,
 				BD1B73D9280569C300DCF539 /* ListenNowView.swift */,
 				BD1B73D7280564DD00DCF539 /* BrowseView.swift */,
 				BD1B73DD280569FA00DCF539 /* LibraryView.swift */,
 				BD1B73DF28056A0200DCF539 /* SearchView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BD1B73E128056F2C00DCF539 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				BD1B73E428056FBD00DCF539 /* FeaturedItem.swift */,
+			);
+			path = Row;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				BD1B73DA280569C300DCF539 /* ListenNowView.swift in Sources */,
 				BD1B73D8280564DD00DCF539 /* BrowseView.swift in Sources */,
 				BD1B73C92805597F00DCF539 /* ContentView.swift in Sources */,
+				BD1B73E528056FBD00DCF539 /* FeaturedItem.swift in Sources */,
 				BD1B73DE280569FA00DCF539 /* LibraryView.swift in Sources */,
 				BD1B73E028056A0200DCF539 /* SearchView.swift in Sources */,
 				BD1B73C72805597F00DCF539 /* PodCastApp.swift in Sources */,
