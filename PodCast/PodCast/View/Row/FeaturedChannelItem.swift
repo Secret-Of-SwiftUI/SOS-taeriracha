@@ -13,7 +13,7 @@ struct FeaturedChannelItem: View {
             Image("red", bundle: nil)
                 .resizable()
                 .frame(width: 200, height: 200)
-            Text("I want to sleep. I want to sleep.. I want to sleep...!!!")
+            Text("자고 싶다. 쉬고 싶어.. 놀고 싶어!!!")
                 .font(.system(size: 14))
                 .foregroundColor(.white)
                 .frame(width: 200, height: 50)

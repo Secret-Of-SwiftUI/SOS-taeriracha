@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct BrowseView: View {
+    
+    let columns: [GridItem] = [
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         NavigationView {
-            Text("Hello, Browse!")
-                .navigationTitle("Browse")
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    FeaturedRow()
+                    
+                    Divider().padding([.leading, .trailing], 15)
+                    NewRow()
+                    
+                    Divider().padding([.leading, .trailing], 15)
+                    FeaturedChannelRow()
+                }
+            }
+            .listStyle(.inset)
+            .navigationTitle("Browse")
         }
     }
 }
