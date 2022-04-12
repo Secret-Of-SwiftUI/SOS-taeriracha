@@ -18,6 +18,7 @@ struct FeaturedItem: View {
                 .frame(width: 300, height: 200)
                 .cornerRadius(6)
         }
+        .padding(.leading, 15)
     }
 }
 
