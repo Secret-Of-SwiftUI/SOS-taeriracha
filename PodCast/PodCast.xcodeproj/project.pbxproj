@@ -22,6 +22,9 @@
 		BD1B73ED2805799900DCF539 /* NewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73EC2805799900DCF539 /* NewRow.swift */; };
 		BD1B73EF28057AF100DCF539 /* FeaturedChannelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73EE28057AF100DCF539 /* FeaturedChannelItem.swift */; };
 		BD1B73F128057DA600DCF539 /* FeaturedChannelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B73F028057DA600DCF539 /* FeaturedChannelRow.swift */; };
+		BD47AB47280EA38C002C0E85 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47AB46280EA38C002C0E85 /* Featured.swift */; };
+		BD47AB4B280EB9BF002C0E85 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47AB4A280EB9BF002C0E85 /* News.swift */; };
+		BD47AB4D280EBD82002C0E85 /* FeaturedChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD47AB4C280EBD82002C0E85 /* FeaturedChannel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		BD1B73EC2805799900DCF539 /* NewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRow.swift; sourceTree = "<group>"; };
 		BD1B73EE28057AF100DCF539 /* FeaturedChannelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedChannelItem.swift; sourceTree = "<group>"; };
 		BD1B73F028057DA600DCF539 /* FeaturedChannelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedChannelRow.swift; sourceTree = "<group>"; };
+		BD47AB46280EA38C002C0E85 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
+		BD47AB4A280EB9BF002C0E85 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		BD47AB4C280EBD82002C0E85 /* FeaturedChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedChannel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BD1B73C82805597F00DCF539 /* ContentView.swift */,
+				BD47AB45280EA2ED002C0E85 /* Models */,
 				BD1B73D42805642E00DCF539 /* View */,
 				BD1B73C62805597F00DCF539 /* PodCastApp.swift */,
 				BD1B73CA2805598100DCF539 /* Assets.xcassets */,
@@ -105,15 +112,25 @@
 		BD1B73E128056F2C00DCF539 /* Row */ = {
 			isa = PBXGroup;
 			children = (
+				BD1B73E82805774000DCF539 /* SectionHeader.swift */,
 				BD1B73E428056FBD00DCF539 /* FeaturedItem.swift */,
 				BD1B73E62805739B00DCF539 /* FeaturedRow.swift */,
-				BD1B73E82805774000DCF539 /* SectionHeader.swift */,
 				BD1B73EA2805781700DCF539 /* NewItem.swift */,
 				BD1B73EC2805799900DCF539 /* NewRow.swift */,
 				BD1B73EE28057AF100DCF539 /* FeaturedChannelItem.swift */,
 				BD1B73F028057DA600DCF539 /* FeaturedChannelRow.swift */,
 			);
 			path = Row;
+			sourceTree = "<group>";
+		};
+		BD47AB45280EA2ED002C0E85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD47AB46280EA38C002C0E85 /* Featured.swift */,
+				BD47AB4A280EB9BF002C0E85 /* News.swift */,
+				BD47AB4C280EBD82002C0E85 /* FeaturedChannel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +206,13 @@
 				BD1B73DA280569C300DCF539 /* ListenNowView.swift in Sources */,
 				BD1B73EB2805781700DCF539 /* NewItem.swift in Sources */,
 				BD1B73D8280564DD00DCF539 /* BrowseView.swift in Sources */,
+				BD47AB4B280EB9BF002C0E85 /* News.swift in Sources */,
 				BD1B73ED2805799900DCF539 /* NewRow.swift in Sources */,
 				BD1B73C92805597F00DCF539 /* ContentView.swift in Sources */,
 				BD1B73F128057DA600DCF539 /* FeaturedChannelRow.swift in Sources */,
 				BD1B73E528056FBD00DCF539 /* FeaturedItem.swift in Sources */,
+				BD47AB47280EA38C002C0E85 /* Featured.swift in Sources */,
+				BD47AB4D280EBD82002C0E85 /* FeaturedChannel.swift in Sources */,
 				BD1B73E72805739B00DCF539 /* FeaturedRow.swift in Sources */,
 				BD1B73E92805774000DCF539 /* SectionHeader.swift in Sources */,
 				BD1B73EF28057AF100DCF539 /* FeaturedChannelItem.swift in Sources */,

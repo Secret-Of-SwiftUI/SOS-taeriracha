@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct FeaturedChannelItem: View {
+    let channel: FeaturedChannel
+    
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
-            Image("red", bundle: nil)
+            Image(channel.thumbImage, bundle: nil)
                 .resizable()
                 .frame(width: 200, height: 200)
-            Text("자고 싶다. 쉬고 싶어.. 놀고 싶어!!!")
+            Text(channel.contents)
                 .font(.system(size: 14))
                 .foregroundColor(.white)
                 .frame(width: 200, height: 50)
@@ -26,6 +28,6 @@ struct FeaturedChannelItem: View {
 
 struct FeaturedChannelItem_Previews: PreviewProvider {
     static var previews: some View {
-        FeaturedChannelItem()
+        FeaturedChannelItem(channel: FeaturedChannel.sampleData[0])
     }
 }

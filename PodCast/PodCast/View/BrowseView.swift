@@ -28,6 +28,7 @@ struct BrowseView: View {
             }
             .listStyle(.inset)
             .navigationTitle("Browse")
+            .navigationViewStyle(.stack)
         }
     }
 }

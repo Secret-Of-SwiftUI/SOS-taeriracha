@@ -8,22 +8,20 @@
 import SwiftUI
 
 struct FeaturedChannelRow: View {
+    let featuredChannels: [FeaturedChannel] = FeaturedChannel.sampleData
+    
     var body: some View {
         VStack {
-            SectionHeader()
+            SectionHeader(
+                sectionTitle: "추천 채널",
+                hidden: true
+            )
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
-                    FeaturedChannelItem()
+                    ForEach(featuredChannels)  { channel in
+                        FeaturedChannelItem(channel: channel)
+                    }
                 }
             }
         }

@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct NewItem: View {
+    let news: News
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Image("pink", bundle: nil)
+            Image(news.thumbImage, bundle: nil)
                 .resizable()
                 .frame(width: 150, height: 150)
                 .cornerRadius(6)
-            Text("어느 스리라차 이야기")
+            Text(news.title)
                 .font(.system(size: 14))
-            Text("Taehyeon-Kim")
+            Text(news.team)
                 .font(.system(size: 12))
                 .foregroundColor(.gray)
         }
@@ -26,6 +28,6 @@ struct NewItem: View {
 
 struct NewItem_Previews: PreviewProvider {
     static var previews: some View {
-        NewItem()
+        NewItem(news: News.sampleData[0])
     }
 }
