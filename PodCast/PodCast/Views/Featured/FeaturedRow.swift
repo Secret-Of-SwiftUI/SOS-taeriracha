@@ -11,13 +11,19 @@ struct FeaturedRow: View {
     let featured: [Featured] = Featured.sampleData
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .top, spacing: 0) {
-                ForEach(featured) { featured in
-                    FeaturedItem(feature: featured)
-                }
+//        ScrollView(.horizontal, showsIndicators: false) {
+//            HStack(alignment: .top, spacing: 0) {
+//                ForEach(featured) { featured in
+//                    FeaturedItem(feature: featured)
+//                }
+//            }
+//        }
+        TabView {
+            ForEach(featured) { featured in
+                FeaturedItem(feature: featured)
             }
         }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
 

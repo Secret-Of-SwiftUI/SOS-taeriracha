@@ -20,7 +20,7 @@ struct SectionHeader: View {
             Button("모두 보기"){}
             .font(.subheadline)
             .foregroundColor(.purple)
-            .isHidden(hidden)
+            .hidden(hidden)
         }
         .padding([.leading, .trailing], 15)
     }
@@ -56,5 +56,9 @@ extension View {
         } else {
             self
         }
+    }
+    
+    func hidden(_ shouldHide: Bool) -> some View {
+        opacity(shouldHide ? 0 : 1)
     }
 }

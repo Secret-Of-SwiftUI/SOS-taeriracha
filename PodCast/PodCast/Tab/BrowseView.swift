@@ -17,7 +17,7 @@ struct BrowseView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(columns: columns, spacing: 20) {
-                    FeaturedRow()
+                    FeaturedRow().frame(width: UIScreen.main.bounds.width, height: 300)
                     
                     Divider().padding([.leading, .trailing], 15)
                     NewRow()
